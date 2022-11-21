@@ -1,8 +1,5 @@
 # run this in a folder
 
-key="validator" # keyring name for joe account, joe1s0xssdta4f6jys52pt44yw306vs0skrf67pas7 here
-
-
 # Upload contracts to chain
 git clone https://github.com/DA0-DA0/dao-contracts.git
 cd dao-contracts/
@@ -17,4 +14,4 @@ docker run --rm -v "$(pwd)":/code \
   cosmwasm/rust-optimizer:0.12.10
 
 
-# cd cwd-core # https://github.com/DA0-DA0/dao-contracts/tree/main/contracts/cwd-core
+sudo mv artifacts ../dao-artifacts
